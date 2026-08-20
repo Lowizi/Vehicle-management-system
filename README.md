@@ -84,9 +84,9 @@ Provide a functional Python application demonstrating foundational Python and Dj
    DJANGO_DEBUG=True
    DB_NAME=vehicle-system
    DB_USER=postgres
-   DB_PASSWORD=123456
+   DB_PASSWORD=+++
    DB_HOST=localhost
-   DB_PORT=5432
+   DB_PORT=+++
    PAGE_SIZE=20
    JWT_ACCESS_LIFETIME_HOURS=24
    JWT_REFRESH_LIFETIME_DAYS=7
