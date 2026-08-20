@@ -1,0 +1,6 @@
+Django>=4.2
+djangorestframework>=3.14
+djangorestframework-simplejwt
+drf-spectacular
+psycopg2-binary
+python-decouple
