@@ -2,6 +2,7 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
+import uuid
 
 
 class Migration(migrations.Migration):
@@ -17,7 +18,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Rental',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
                 ('rental_date', models.DateTimeField(auto_now_add=True, verbose_name='Rental Date')),
                 ('expected_return_date', models.DateTimeField(verbose_name='Expected Return Date')),
                 ('actual_return_date', models.DateTimeField(blank=True, null=True, verbose_name='Actual Return Date')),
